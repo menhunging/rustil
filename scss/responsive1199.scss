@@ -102,6 +102,7 @@
   .about-slider .swiper-slide {
     padding: 30px 30px;
     height: 410px;
+    border-radius: 30px;
   }
 
   .about-slider .big {
@@ -122,5 +123,25 @@
   .caption--h2 {
     font-size: 35px;
     line-height: 45px;
+  }
+
+  .text-scroll {
+    font-size: 14px;
+    line-height: 20px;
+    transform: translateX(20px);
+  }
+
+  .text-scroll .text-scroll__line + .text-scroll__line {
+    margin-top: 10px;
+  }
+
+  .text-scroll span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+    padding-bottom: 20px;
   }
 }

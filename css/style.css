@@ -681,26 +681,6 @@ picture img {
   object-fit: cover;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #e5e5e5;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(245, 140, 31);
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #e5e5e5;
-  border-radius: 8px;
-}
-
 .burger {
   display: none;
   position: relative;
@@ -758,6 +738,33 @@ picture img {
     width: calc(100% - 17px);
   }
 }
+.mCustomScrollBox {
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.mCSB_scrollTools {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+
+.mCSB_draggerRail {
+  display: none;
+}
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: red;
+  width: 7px;
+}
+
 .btn {
   -webkit-appearance: none;
   border-radius: 8px;
@@ -1086,7 +1093,7 @@ h3,
   left: -19px;
   text-decoration-skip-ink: none;
   text-underline-offset: 12px;
-  transition: text-decoration 0.3s;
+  transition: background-color 0.3s;
 }
 .grettings-btn__text {
   position: relative;
@@ -1108,7 +1115,7 @@ h3,
   top: 30px;
 }
 .grettings-btn:hover {
-  text-decoration-color: transparent;
+  background-color: rgb(202, 0, 13);
 }
 
 .about-section {
@@ -1147,6 +1154,7 @@ h3,
 }
 .about-slider__content {
   max-width: 620px;
+  min-height: 300px;
 }
 .about-slider .small {
   font-size: 16px;
@@ -1196,6 +1204,25 @@ h3,
 }
 .about-slider .swiper-btn-next:hover {
   opacity: 0.75;
+}
+
+.text-scroll {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+}
+.text-scroll .text-scroll__line + .text-scroll__line {
+  margin-top: 20px;
+}
+.text-scroll span {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+  display: block;
+  color: rgb(141, 154, 163);
 }
 
 @media (min-width: 1024px) {
@@ -1429,6 +1456,7 @@ h3,
   .about-slider .swiper-slide {
     padding: 30px 30px;
     height: 410px;
+    border-radius: 30px;
   }
   .about-slider .big {
     font-size: 16px;
@@ -1445,6 +1473,22 @@ h3,
   .caption--h2 {
     font-size: 35px;
     line-height: 45px;
+  }
+  .text-scroll {
+    font-size: 14px;
+    line-height: 20px;
+    transform: translateX(20px);
+  }
+  .text-scroll .text-scroll__line + .text-scroll__line {
+    margin-top: 10px;
+  }
+  .text-scroll span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 1023px) {
@@ -1549,6 +1593,7 @@ h3,
   }
   .about-slider__content {
     max-width: 80%;
+    min-height: initial;
   }
   .about-slider .caption {
     max-width: 80%;
@@ -1575,6 +1620,9 @@ h3,
   .about-slider .swiper-btn-prev svg {
     width: 15px;
     height: 15px;
+  }
+  .text-scroll {
+    height: 280px;
   }
 }
 @media (max-width: 767px) {
@@ -1658,6 +1706,9 @@ h3,
     font-size: 25px;
     line-height: 30px;
   }
+  .text-scroll {
+    height: 260px;
+  }
 }
 @media (max-width: 639px) {
   .grettings-slide .caption__text {
@@ -1727,6 +1778,15 @@ h3,
   }
   .about-slider .caption {
     margin-bottom: 10px;
+  }
+  .text-scroll {
+    height: 260px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .text-scroll span {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 @media (max-width: 479px) {

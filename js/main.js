@@ -139,6 +139,12 @@ $(document).ready(function () {
       });
     });
   }
+
+  if ($(".text-scroll").length > 0) {
+    $(".text-scroll").mCustomScrollbar({
+      theme: "my-theme",
+    });
+  }
 });
 
 $(window).on("resize", function () {});

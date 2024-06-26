@@ -125,6 +125,7 @@
 
   .about-slider__content {
     max-width: 80%;
+    min-height: initial;
   }
 
   .about-slider .caption {
@@ -158,5 +159,9 @@
       width: 15px;
       height: 15px;
     }
+  }
+
+  .text-scroll {
+    height: 280px;
   }
 }
