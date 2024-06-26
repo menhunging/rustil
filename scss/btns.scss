@@ -1,0 +1,32 @@
+.btn {
+  -webkit-appearance: none;
+  border-radius: 8px;
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: $colorWhite;
+  text-align: center;
+  padding: 24px 32px;
+  display: inline-block;
+  transition: all 0.3s;
+
+  svg {
+    @include transition(fill 0.3s);
+
+    path {
+      fill: $colorBlack;
+      @include transition(fill 0.3s);
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $colorWhite;
+      }
+    }
+  }
+}

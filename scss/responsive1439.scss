@@ -1,0 +1,84 @@
+@media (max-width: 1439px) {
+  body {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .header__links a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header__call {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .logo__text {
+    max-width: 207px;
+  }
+
+  .header__right {
+    gap: 20px;
+  }
+
+  .grettings-slide {
+    .caption__text {
+      font-size: 110px;
+      line-height: 90px;
+
+      &:nth-child(1) {
+      }
+
+      &:nth-child(2) {
+        font-size: 90px;
+        line-height: 80px;
+      }
+
+      &:nth-child(3) {
+        font-size: 65px;
+        line-height: 65px;
+      }
+
+      &:nth-child(4) {
+        font-size: 65px;
+        line-height: 65px;
+      }
+    }
+  }
+
+  .grettings{
+    padding-bottom: 30px;
+  }
+
+  .grettings-item {
+    max-width: 215px;
+  }
+
+  .grettings-item__icon {
+    width: 50px;
+    height: 55px;
+  }
+
+  .grettings-slide .picture {
+    left: calc(50% - 95px);
+    top: 33px;
+    width: 1600px;
+    height: 438px;
+  }
+
+  .grettings-list {
+    margin-top: 70px;
+  }
+
+  .grettings-btn {
+    font-size: 24px;
+    line-height: 26px;
+    padding: 15px 0 20px;
+  }
+}

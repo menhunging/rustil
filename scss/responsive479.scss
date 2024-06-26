@@ -1,0 +1,143 @@
+@media (max-width: 479px) {
+  .logo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    max-width: 80%;
+  }
+
+  .logo__text {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .header__top {
+    align-items: flex-start;
+    padding: 4px 10px;
+  }
+
+  .burger {
+    transform: translateY(16px);
+    left: -15px;
+  }
+
+  .grettings-slide {
+    .caption__text {
+      font-size: 30px;
+      line-height: 25px;
+
+      &:nth-child(2) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      &:nth-child(3) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      &:nth-child(4) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .grettings-slider {
+    padding: 10px 10px 10px;
+  }
+
+  .grettings-slide .picture {
+    left: calc(50% - 23px);
+    top: 48px;
+    width: 500px;
+    height: 100px;
+  }
+
+  .grettings-item {
+    font-size: 10px;
+    line-height: 14px;
+    max-width: 45%;
+    gap: 5px;
+  }
+
+  .grettings-item__icon {
+    width: 25px;
+    height: 35px;
+  }
+
+  .grettings-list {
+    margin-top: 20px;
+  }
+
+  .grettings-btn {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+    padding: 10px 0 15px;
+    text-underline-offset: 4px;
+  }
+
+  .grettings-btn__text::before {
+    display: none;
+  }
+
+  .grettings {
+    padding-bottom: 15px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .menu {
+    padding: 15px;
+  }
+
+  .header__links a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__phone {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__call {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about-slider {
+    padding: 0 10px;
+  }
+
+  .about-slider__content {
+    padding: 5px 20px;
+  }
+
+  .about-slider .caption {
+    max-width: 80%;
+    width: 100%;
+  }
+
+  .about-slider .picture {
+    right: -35px;
+    width: 141px;
+    height: 110px;
+    bottom: auto;
+    top: 0px;
+  }
+
+  h2,
+  .caption--h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .about-slider .big {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
