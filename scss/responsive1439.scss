@@ -52,7 +52,7 @@
     }
   }
 
-  .grettings{
+  .grettings {
     padding-bottom: 30px;
   }
 
@@ -80,5 +80,146 @@
     font-size: 24px;
     line-height: 26px;
     padding: 15px 0 20px;
+  }
+
+  .color-block__left {
+    max-width: 585px;
+    width: 60%;
+  }
+
+  .color-block__right {
+    width: 40%;
+  }
+
+  .color-block__list {
+    padding: 50px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .color-block__list li {
+    gap: 15px;
+    width: calc(33.3333333333% - 70px);
+  }
+
+  .calc-section__caption-line:nth-child(1) {
+    font-size: 70px;
+    line-height: 45px;
+  }
+
+  .calc-section__caption-line:nth-child(2) {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 60%;
+  }
+
+  .calc-section__right {
+    padding: 30px;
+  }
+
+  .calc-section__inner {
+    padding: 50px;
+  }
+
+  .calc-section__result .title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .calc-section__result .result {
+    font-size: 40px;
+    padding: 20px 30px;
+  }
+
+  .calc-section__result {
+    padding: 20px;
+    height: auto;
+  }
+
+  .calc-section__left {
+    max-width: 489px;
+  }
+
+  .calc-section__desc {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+    max-width: 450px;
+  }
+
+  .calc-section {
+    padding: 50px 21px;
+  }
+
+  .faq-block .caption {
+    max-width: 50%;
+  }
+
+  .faq-item__quest {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .faq-item__num {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .faq-item {
+    padding-bottom: 10px;
+  }
+
+  .faq-item__answer {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .faq-item + .faq-item {
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+
+  .faq-list {
+    height: 305px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .partners-section {
+    margin: 55px 0 30px;
+    padding: 50px 55px 0;
+  }
+
+  h3,
+  .caption--h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .section-title .text {
+    transform: translateY(40px);
+  }
+
+  .section-title .caption {
+    max-width: 310px;
+  }
+
+  .partners-slider {
+    margin-top: 50px;
+  }
+
+  marquee {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 55px;
+  }
+
+  .partners-slider .swiper-btn-next {
+    right: -20px;
+  }
+
+  .partners-slider .swiper-btn-prev {
+    left: -20px;
   }
 }

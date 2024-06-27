@@ -140,4 +140,75 @@
     font-size: 12px;
     line-height: 18px;
   }
+
+  .colors-slider {
+    margin-top: 20px;
+    padding: 10px 30px;
+  }
+
+  .colors-slider__slider .swiper-btn-next svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .colors-slider__slider .swiper-btn-prev svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .color-block__list {
+    padding: 30px 30px;
+  }
+
+  .calc-section__caption-line:nth-child(1) {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .calc-section__caption-line:nth-child(2) {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 80%;
+  }
+
+  .faq-item__quest {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .faq-item__num {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faq-list {
+    height: 252px;
+  }
+
+  .faq-item__answer {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .section-title::before {
+    width: calc(50% - 40px);
+  }
+
+  h3,
+  .caption--h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .section-title .caption {
+    max-width: 210px;
+  }
+
+  marquee {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
 }

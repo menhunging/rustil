@@ -398,16 +398,18 @@ input {
 .modal__close {
   @include transition(all 0.3s);
   position: absolute;
-  right: -70px;
+  right: 40px;
   top: 40px;
   display: flex;
   z-index: 10;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   color: #292929;
   align-items: center;
   gap: 11px;
+  width: 21px;
+  height: 21px;
 
   svg {
     pointer-events: none;
@@ -589,3 +591,4 @@ picture {
   background-color: red;
   width: 7px;
 }
+

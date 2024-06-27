@@ -6,4 +6,36 @@
   .about-slider .swiper-btn-next {
     right: -40px;
   }
+
+  .color-block__left {
+    max-width: 615px;
+  }
+
+  .color-block__list li {
+    gap: 15px;
+    width: calc(33.3333333333% - 90px);
+  }
+
+  .calc-section__caption-line:nth-child(1) {
+    font-size: 90px;
+    line-height: 65px;
+  }
+
+  .calc-section__caption-line:nth-child(2) {
+    font-size: 45px;
+    line-height: 50px;
+    max-width: 80%;
+  }
+
+  .calc-section__right {
+    padding: 50px 60px 50px 60px;
+  }
+
+  .partners-slider .swiper-btn-next {
+    right: -60px;
+  }
+
+  .partners-slider .swiper-btn-prev {
+    left: -60px;
+  }
 }

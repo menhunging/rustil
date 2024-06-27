@@ -50,6 +50,15 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".calc-section").length > 0) {
+    $(".calc-section .input-item input").map(function () {
+      $(this).inputmask({
+        mask: "9{1,}|,9 (мм)",
+        placeholder: "",
+      });
+    });
+  }
+
   if ($(".modal").length > 0) {
     MicroModal.init({
       openTrigger: "data-modal",
@@ -66,16 +75,16 @@ $(document).ready(function () {
       },
     });
 
-    $("[data-modal]").map(function () {
-      $(this).click((e) => {
-        e.preventDefault();
-        $("body").addClass("modal-open");
-      });
-    });
+    // $("[data-modal]").map(function () {
+    //   $(this).click((e) => {
+    //     e.preventDefault();
+    //     $("body").addClass("modal-open");
+    //   });
+    // });
 
     $("[data-micromodal-close]").map(function () {
       $(this).click((e) => {
-        //        e.preventDefault();
+        //e.preventDefault();
         if ($(this).attr("data-modal")) {
           setTimeout(() => {
             $("body").addClass("modal-open");
@@ -91,14 +100,6 @@ $(document).ready(function () {
       autoHeight: true,
       watchSlidesProgress: true,
       loop: false,
-      // navigation: {
-      //   nextEl: ".swiper-button-next",
-      //   prevEl: ".swiper-button-prev",
-      // },
-    });
-
-    swiper.on("slideChange", function (e) {
-      // console.log("swiper.activeIndex", swiper.realIndex);
     });
   }
 
@@ -114,9 +115,85 @@ $(document).ready(function () {
         prevEl: ".swiper-btn-prev",
       },
     });
+  }
 
-    swiper.on("slideChange", function (e) {
-      // console.log("swiper.activeIndex", swiper.realIndex);
+  if ($(".colors-slider__slider").length > 0) {
+    const swiper = new Swiper(".colors-slider__slider", {
+      slidesPerView: 5,
+      spaceBetween: 56,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 56,
+        },
+      },
+    });
+  }
+
+  if ($(".partners-slider").length > 0) {
+    const swiper = new Swiper(".partners-slider", {
+      slidesPerView: 4,
+      spaceBetween: 50,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
     });
   }
 
@@ -143,6 +220,34 @@ $(document).ready(function () {
   if ($(".text-scroll").length > 0) {
     $(".text-scroll").mCustomScrollbar({
       theme: "my-theme",
+      scrollInertia: 800,
+    });
+  }
+
+  if ($(".color-circle").length > 0) {
+    $(".color-circle").on("click", function () {
+      let color = $(this).attr("data-color");
+      let name = $(this).attr("data-name");
+      let code = $(this).attr("data-code");
+
+      $(".popup-colors__color").css("background-color", color);
+      $(".popup-colors .name").text(name);
+      $(".popup-colors .code").text(code);
+      $(".popup-colors .fullname strong").text(`${name} ${code}`);
+    });
+  }
+
+  if ($(".faq-list").length > 0) {
+    $(".faq-list").mCustomScrollbar({
+      theme: "my-theme",
+      scrollInertia: 100,
+    });
+
+    $(".faq-item__quest").on("mouseover", function () {
+      let parent = $(this).parents(".faq-item");
+      if (!parent.hasClass("opened")) {
+        parent.addClass("opened").find(".faq-item__answer").stop().slideDown();
+      }
     });
   }
 });

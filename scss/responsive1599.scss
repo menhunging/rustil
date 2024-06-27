@@ -91,4 +91,62 @@
     font-size: 14px;
     line-height: 24px;
   }
+
+  .colors-block {
+    padding: 50px;
+  }
+
+  .calc-section__caption-line:nth-child(1) {
+    font-size: 80px;
+    line-height: 55px;
+  }
+
+  .calc-section__caption-line:nth-child(2) {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 60%;
+  }
+
+  .calc-section__right {
+    padding: 50px 60px 50px 60px;
+  }
+
+  .calc-section__inner {
+    padding: 50px;
+  }
+
+  .calc-section .input-item input {
+    height: 65px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  .calc-section__result .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .calc-section__result .result {
+    font-size: 50px;
+    padding: 30px 40px;
+  }
+
+  .faq-list {
+    height: 495px;
+    margin-bottom: 40px;
+  }
+
+  .faq-item {
+    padding-bottom: 20px;
+  }
+
+  .faq-item__quest {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .faq-item + .faq-item {
+    margin-top: 20px;
+    padding-top: 40px;
+  }
 }
