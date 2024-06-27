@@ -160,12 +160,12 @@
     padding: 30px 30px;
   }
 
-  .calc-section__caption-line:nth-child(1) {
+  .form-section__caption-line:nth-child(1) {
     font-size: 40px;
     line-height: 30px;
   }
 
-  .calc-section__caption-line:nth-child(2) {
+  .form-section__caption-line:nth-child(2) {
     font-size: 16px;
     line-height: 20px;
     max-width: 80%;
@@ -192,7 +192,7 @@
   }
 
   .section-title::before {
-    width: calc(50% - 40px);
+    width: 30%;
   }
 
   h3,
@@ -210,5 +210,84 @@
     font-weight: 800;
     line-height: 25px;
     padding-bottom: 20px;
+  }
+
+  .documents-item {
+    gap: 5px;
+  }
+
+  .documents-list {
+    grid-template-columns: 1fr;
+  }
+
+  .info-section__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .info-section__text strong {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .slider-info .txt {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+    max-width: 130px;
+  }
+
+  .slider-info-wrapper .info-text {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 20px;
+  }
+
+  .commercial-offer .grettings-btn {
+    margin-top: -70px;
+  }
+
+  .commercial-offer .form-section__inner {
+    padding-bottom: 70px;
+  }
+
+  .check-block label {
+    padding-left: 30px;
+  }
+
+  .check-block {
+    padding: 5px 0;
+  }
+
+  .map {
+    height: 180px;
+  }
+
+  .contacts__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .contacts__links {
+    gap: 10px;
+
+    a {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .contacts__whatt {
+    font-size: 12px;
+    line-height: 18px;
+
+    span {
+      font-size: 10px;
+    }
+  }
+
+  .contacts__mail {
+    font-size: 16px;
+    line-height: 20px;
   }
 }

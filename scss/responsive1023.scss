@@ -170,26 +170,26 @@
     width: calc(33.3333333333% - 30px);
   }
 
-  .calc-section__caption-line:nth-child(1) {
+  .form-section__caption-line:nth-child(1) {
     font-size: 50px;
     line-height: 40px;
   }
 
-  .calc-section__caption-line:nth-child(2) {
+  .form-section__caption-line:nth-child(2) {
     font-size: 18px;
     line-height: 22px;
     max-width: 70%;
   }
 
-  .calc-section__left {
+  .form-section__left {
     max-width: 359px;
   }
 
-  .calc-section__result .title {
+  .form-section__result .title {
     width: 100%;
   }
 
-  .calc-section__result {
+  .form-section__result {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -198,30 +198,30 @@
     border-radius: 30px;
   }
 
-  .calc-section__right {
+  .form-section__right {
     width: 50%;
   }
 
-  .calc-section__result .result {
+  .form-section__result .result {
     font-size: 30px;
     padding: 10px 20px;
   }
 
-  .calc-section .input-list {
+  .form-section .input-list {
     gap: 10px;
   }
 
-  .calc-section__right {
+  .form-section__right {
     padding: 15px;
   }
 
-  .calc-section__desc {
+  .form-section__desc {
     max-width: 90%;
     font-size: 10px;
     line-height: 14px;
   }
 
-  .calc-section__inner {
+  .form-section__inner {
     border-radius: 30px;
   }
 
@@ -295,5 +295,77 @@
     font-weight: 800;
     line-height: 45px;
     padding-bottom: 30px;
+  }
+
+  .documents-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .documents-item {
+    gap: 15px;
+  }
+
+  .info-section {
+    padding: 30px 30px;
+  }
+
+  .delivery-item .caption {
+    min-height: inherit;
+  }
+
+  .delivery-item {
+    padding: 20px 30px;
+  }
+
+  .delivery-list {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-item__list {
+    margin-top: 15px;
+  }
+
+  .delivery-item__list li + li {
+    margin-top: 15px;
+  }
+
+  .contacts__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__links {
+    gap: 10px;
+
+    a {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  .contacts__whatt {
+    font-size: 14px;
+    line-height: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+
+    svg {
+      width: 20px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .contacts__mail {
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  .contacts__links {
+    margin-top: 30px;
   }
 }

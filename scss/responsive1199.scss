@@ -207,22 +207,22 @@
     padding: 30px;
   }
 
-  .calc-section__caption-line:nth-child(1) {
+  .form-section__caption-line:nth-child(1) {
     font-size: 60px;
     line-height: 50px;
   }
 
-  .calc-section__caption-line:nth-child(2) {
+  .form-section__caption-line:nth-child(2) {
     font-size: 20px;
     line-height: 25px;
     max-width: 60%;
   }
 
-  .calc-section__left {
+  .form-section__left {
     max-width: 439px;
   }
 
-  .calc-section {
+  .form-section {
     .input-item {
       width: 100%;
 
@@ -232,26 +232,162 @@
     }
   }
 
-  .calc-section__result .title {
+  .form-section__result .title {
     font-size: 14px;
     line-height: 18px;
   }
 
-  .calc-section__result {
+  .form-section__result {
     gap: 20px;
   }
 
-  .calc-section__inner {
+  .form-section__inner {
     padding: 30px;
   }
 
-  .calc-section__desc {
+  .form-section__desc {
     font-size: 12px;
     line-height: 20px;
     margin-top: 10px;
   }
 
-  .calc-section__caption {
+  .form-section__caption {
     gap: 10px;
+  }
+
+  .documents-item .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .documents-section__inner {
+    padding: 30px;
+  }
+
+  .documents-item {
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .documents-item .picture {
+    border-radius: 15px;
+  }
+
+  .slider-info .txt {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .slider-info .swiper-slide {
+    margin-top: -30px;
+  }
+
+  .slider-info .icon {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .slider-info .txt {
+    max-width: 200px;
+  }
+
+  .slider-info .swiper-btn-prev {
+    top: calc(100% - 127px);
+  }
+
+  .slider-info .swiper-btn-next {
+    top: calc(100% - 127px);
+  }
+
+  .slider-info-wrapper .info-text {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px;
+  }
+
+  .info-section__text {
+    margin-top: 50px;
+  }
+
+  .info-section {
+    padding: 30px 50px 30px;
+  }
+
+  .section-title::before {
+    width: calc(50% - 149px);
+    left: calc(50% + 8px);
+  }
+
+  h3,
+  .caption--h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .delivery-item {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .form-section .textarea-input textarea {
+    padding: 15px 30px;
+    height: 130px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .check-block {
+    display: flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 5px 15px;
+
+    label {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  .form-section .textarea-input textarea {
+    border-radius: 30px;
+  }
+
+  .contacts-section__left {
+    padding: 30px 30px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .contacts__links a {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts__whatt {
+    font-size: 16px;
+    line-height: 24px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  .contacts__mail {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts-section__left {
+    justify-content: center;
   }
 }

@@ -113,11 +113,11 @@
     line-height: 20px;
   }
 
-  .calc-section {
+  .form-section {
     padding: 30px 10px;
   }
 
-  .calc-section__inner {
+  .form-section__inner {
     padding: 15px;
   }
 
@@ -172,5 +172,73 @@
   .partners-section {
     margin: 30px 0 10px;
     padding: 20px 25px 10px;
+  }
+
+  .documents-section {
+    padding: 30px 10px;
+  }
+
+  .section-title::before {
+    width: 40%;
+  }
+
+  .swiper-btn-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .swiper-btn-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .slider-info-wrapper .info-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px;
+  }
+
+  .info-section {
+    margin-top: 10px;
+    padding: 30px 15px;
+  }
+
+  .delivery-section__head {
+    padding: 30px 18px;
+  }
+
+  .slider-info-wrapper {
+    padding: 0 10px;
+  }
+
+  .delivery-list {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .delivery-item {
+    border-radius: 30px;
+    padding: 20px 15px;
+  }
+
+  .contacts-section {
+    padding: 15px 10px;
+    margin-top: 30px;
   }
 }

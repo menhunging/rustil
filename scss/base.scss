@@ -32,6 +32,7 @@ input {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
 
   .footer {
     margin-top: auto;
@@ -122,6 +123,10 @@ input {
     @extend %stylesInput;
     height: 100px;
     display: block;
+    border: solid 1px rgba(189, 189, 189, 1);
+    background-color: $colorWhite;
+    border-radius: 50px;
+    width: 100%;
   }
 
   input {
@@ -149,6 +154,7 @@ input {
   display: flex;
   align-items: center;
   min-height: 24px;
+  padding: 9px 41px;
 
   input {
     display: none;
@@ -191,26 +197,26 @@ input {
     @include before {
       left: 5px;
       top: 50%;
-      width: 24px;
-      height: 24px;
+      width: 15px;
+      height: 15px;
       transform: translateY(-50%);
-      border-radius: 4px;
+      border-radius: 50%;
       overflow: hidden;
       background-position: center;
       background-repeat: no-repeat;
-      background-image: url("../img/svg/check.svg");
       opacity: 0;
+      background-color: rgba(34, 29, 29, 1);
+      border: solid 4px #eef1f3;
     }
 
     @include after {
       top: 50%;
       left: 5px;
-      top: 50%;
-      width: 24px;
-      height: 24px;
-      border: solid 1px rgba(245, 140, 31, 1);
+      width: 15px;
+      height: 15px;
+      border: solid 1px rgba(34, 29, 29, 1);
       transform: translateY(-50%);
-      border-radius: 4px;
+      border-radius: 50%;
       overflow: hidden;
     }
   }
@@ -591,4 +597,3 @@ picture {
   background-color: red;
   width: 7px;
 }
-

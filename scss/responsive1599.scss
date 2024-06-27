@@ -96,37 +96,37 @@
     padding: 50px;
   }
 
-  .calc-section__caption-line:nth-child(1) {
+  .form-section__caption-line:nth-child(1) {
     font-size: 80px;
     line-height: 55px;
   }
 
-  .calc-section__caption-line:nth-child(2) {
+  .form-section__caption-line:nth-child(2) {
     font-size: 35px;
     line-height: 40px;
     max-width: 60%;
   }
 
-  .calc-section__right {
+  .form-section__right {
     padding: 50px 60px 50px 60px;
   }
 
-  .calc-section__inner {
+  .form-section__inner {
     padding: 50px;
   }
 
-  .calc-section .input-item input {
+  .form-section .input-item input {
     height: 65px;
     padding: 0 30px;
     font-size: 14px;
   }
 
-  .calc-section__result .title {
+  .form-section__result .title {
     font-size: 18px;
     line-height: 22px;
   }
 
-  .calc-section__result .result {
+  .form-section__result .result {
     font-size: 50px;
     padding: 30px 40px;
   }
@@ -148,5 +148,64 @@
   .faq-item + .faq-item {
     margin-top: 20px;
     padding-top: 40px;
+  }
+
+  .documents-list {
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .documents-item {
+    padding: 25px;
+    border-radius: 50px;
+  }
+
+  .documents-item .name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .documents-section__inner {
+    padding: 50px;
+  }
+
+  .delivery-section__head {
+    padding: 40px 50px 30px;
+  }
+
+  .delivery-item {
+    padding: 30px 50px;
+    font-size: 14px;
+  }
+
+  .delivery-item .caption {
+    min-height: 152px;
+  }
+
+  .contacts__text {
+    font-size: 18px;
+    line-height: 24px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contacts__links {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+
+    a {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .contacts__mail {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 50px;
+  }
+  .contacts-section__left {
+    padding: 40px 50px;
   }
 }

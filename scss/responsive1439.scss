@@ -102,52 +102,52 @@
     width: calc(33.3333333333% - 70px);
   }
 
-  .calc-section__caption-line:nth-child(1) {
+  .form-section__caption-line:nth-child(1) {
     font-size: 70px;
     line-height: 45px;
   }
 
-  .calc-section__caption-line:nth-child(2) {
+  .form-section__caption-line:nth-child(2) {
     font-size: 25px;
     line-height: 30px;
     max-width: 60%;
   }
 
-  .calc-section__right {
+  .form-section__right {
     padding: 30px;
   }
 
-  .calc-section__inner {
+  .form-section__inner {
     padding: 50px;
   }
 
-  .calc-section__result .title {
+  .form-section__result .title {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .calc-section__result .result {
+  .form-section__result .result {
     font-size: 40px;
     padding: 20px 30px;
   }
 
-  .calc-section__result {
+  .form-section__result {
     padding: 20px;
     height: auto;
   }
 
-  .calc-section__left {
+  .form-section__left {
     max-width: 489px;
   }
 
-  .calc-section__desc {
+  .form-section__desc {
     font-size: 14px;
     line-height: 24px;
     margin-top: 15px;
     max-width: 450px;
   }
 
-  .calc-section {
+  .form-section {
     padding: 50px 21px;
   }
 
@@ -221,5 +221,67 @@
 
   .partners-slider .swiper-btn-prev {
     left: -20px;
+  }
+
+  .info-section__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  .info-section__text strong {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .section-title::before {
+    width: calc(50% - 59px);
+    left: calc(50% + 8px);
+  }
+
+  .info-section {
+    border-top: solid 1px rgb(34, 29, 29);
+    padding: 30px 70px 50px;
+  }
+
+  .slider-info .txt {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .slider-info .swiper-btn-next {
+    right: 15px;
+  }
+
+  .slider-info .swiper-btn-prev {
+    left: 15px;
+  }
+
+  .slider-info-wrapper .info-text {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 20px;
+  }
+
+  .delivery-section__head .caption {
+    max-width: 60%;
+  }
+
+  .delivery-item {
+    padding: 20px 30px;
+  }
+
+  .delivery-item .caption {
+    min-height: 132px;
+  }
+
+  .commercial-offer {
+    .form-section__inner {
+      padding-bottom: 130px;
+    }
+
+    .grettings-btn {
+      margin-top: -100px;
+    }
   }
 }

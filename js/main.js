@@ -197,6 +197,34 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".slider-info").length > 0) {
+    const swiper = new Swiper(".slider-info", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-btn-next",
+        prevEl: ".swiper-btn-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  }
+
   if ($(".selectric").length > 0) {
     $(".selectric").map(function () {
       $(this).selectric({
