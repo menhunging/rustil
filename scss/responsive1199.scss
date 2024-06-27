@@ -390,4 +390,32 @@
   .contacts-section__left {
     justify-content: center;
   }
+
+  .popup-succes {
+    min-height: 320px;
+  }
+
+  .not-page__inner {
+    min-height: 690px;
+
+    .pic2 {
+      width: 750px;
+      height: 180px;
+      right: -430px;
+      bottom: 230px;
+    }
+
+    .pic3 {
+      left: calc(50% - -5px);
+    }
+
+    .pic4 {
+      display: none;
+    }
+  }
+
+  .not-page__title {
+    font-size: 100px;
+    line-height: 70px;
+  }
 }

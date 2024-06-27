@@ -284,4 +284,26 @@
       margin-top: -100px;
     }
   }
+
+  .footer-menu {
+    font-size: 14px;
+    padding-left: 50px;
+  }
+
+  .footer-menu li {
+    width: calc(50% - 15px);
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  .link-call {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .not-page__inner {
+    padding: 60px;
+  }
 }

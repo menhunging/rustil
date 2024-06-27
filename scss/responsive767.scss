@@ -255,4 +255,111 @@
   .map {
     height: 300px;
   }
+
+  .footer .logo {
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .modal__container {
+    padding: 15px 10px;
+  }
+
+  .popup {
+    border-radius: 40px;
+    padding: 17px 15px 20px;
+    overflow: hidden;
+  }
+
+  .modal__close {
+    width: 36px;
+    height: 36px;
+
+    svg {
+      width: 12px;
+    }
+  }
+
+  .popup .input-item textarea {
+    height: 100px;
+    padding: 15px 30px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+  .popup .input-item input {
+    height: 55px;
+    padding: 0 30px;
+    font-size: 14px;
+  }
+
+  .popup .desc {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 15px;
+  }
+
+  .popup .input-item {
+    margin-top: 20px;
+  }
+
+  .popup-succes {
+    min-height: 280px;
+  }
+
+  .input-file label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .popup {
+    .grettings-btn__text::before {
+      top: 15px;
+    }
+  }
+
+  .not-page__inner {
+    min-height: 520px;
+    padding: 50px 30px;
+
+    .pic1 {
+      width: 480px;
+      height: 170px;
+      left: -210px;
+      top: 20px;
+    }
+
+    .pic2 {
+      width: 400px;
+      height: 100px;
+      right: -150px;
+      bottom: 160px;
+    }
+
+    .pic3 {
+      left: calc(50% - -5px);
+    }
+
+    .pic4 {
+      display: none;
+    }
+  }
+
+  .not-page__title {
+    font-size: 80px;
+    line-height: 40px;
+  }
+
+  .not-page__code {
+    font-size: 80px;
+    line-height: 90px;
+  }
+
+  .not-page__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

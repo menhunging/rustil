@@ -55,6 +55,8 @@ $(document).ready(function () {
       $(this).inputmask({
         mask: "9{1,}|,9 (мм)",
         placeholder: "",
+        showMaskOnHover: false,
+        showMaskOnFocus: true,
       });
     });
   }
@@ -63,8 +65,6 @@ $(document).ready(function () {
     MicroModal.init({
       openTrigger: "data-modal",
       disableScroll: true,
-      awaitOpenAnimation: true,
-      awaitCloseAnimation: true,
 
       onShow: () => {
         $("body").addClass("modal-open");
@@ -75,21 +75,16 @@ $(document).ready(function () {
       },
     });
 
-    // $("[data-modal]").map(function () {
-    //   $(this).click((e) => {
-    //     e.preventDefault();
-    //     $("body").addClass("modal-open");
-    //   });
-    // });
+    $("[data-modal]").map(function () {
+      $(this).click((e) => {
+        e.preventDefault();
+        $("body").addClass("modal-open");
+      });
+    });
 
     $("[data-micromodal-close]").map(function () {
       $(this).click((e) => {
-        //e.preventDefault();
-        if ($(this).attr("data-modal")) {
-          setTimeout(() => {
-            $("body").addClass("modal-open");
-          }, 0.1);
-        }
+        e.preventDefault();
       });
     });
   }

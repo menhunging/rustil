@@ -290,4 +290,41 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .not-page__title {
+    font-size: 50px;
+    line-height: 20px;
+  }
+
+  .not-page__code {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .not-page__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .not-page__inner {
+    min-height: 410px;
+    padding: 30px 15px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  .not-page__inner .pic1 {
+    width: 420px;
+    height: 120px;
+    left: -110px;
+    top: 20px;
+  }
+
+  .not-page__inner .pic2 {
+    display: none;
+  }
+
+  .not-page {
+    margin-bottom: 30px;
+  }
 }
