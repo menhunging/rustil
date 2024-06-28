@@ -95,6 +95,16 @@ $(document).ready(function () {
       autoHeight: true,
       watchSlidesProgress: true,
       loop: false,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          autoHeight: false,
+        },
+        768: {
+          slidesPerView: 1,
+          autoHeight: true,
+        },
+      },
     });
   }
 
@@ -266,12 +276,41 @@ $(document).ready(function () {
       scrollInertia: 100,
     });
 
-    $(".faq-item__quest").on("mouseover", function () {
-      let parent = $(this).parents(".faq-item");
-      if (!parent.hasClass("opened")) {
-        parent.addClass("opened").find(".faq-item__answer").stop().slideDown();
-      }
-    });
+    if ($(window).width() > 1200) {
+      $(".faq-item").on("mouseover", function () {
+        let sefl = $(this);
+        openQuest(sefl);
+      });
+
+      $(".faq-item").on("mouseout", function () {
+        let sefl = $(this);
+        $(".faq-item").removeClass("opened");
+        $(".faq-item__answer").stop().slideUp();
+        closeQuest(sefl);
+      });
+    } else {
+      $(".faq-item__quest").on("click", function () {
+        let sefl = $(this).parents(".faq-item");
+
+        if (sefl.hasClass("opened")) {
+          $(".faq-item").removeClass("opened");
+          $(".faq-item__answer").stop().slideUp();
+          closeQuest(sefl);
+        } else {
+          $(".faq-item").removeClass("opened");
+          $(".faq-item__answer").stop().slideUp();
+          openQuest(sefl);
+        }
+      });
+    }
+
+    function openQuest(quest) {
+      quest.addClass("opened").find(".faq-item__answer").stop().slideDown();
+    }
+
+    function closeQuest(quest) {
+      quest.removeClass("opened").find(".faq-item__answer").stop().slideUp();
+    }
   }
 
   if ($(".menu").length > 0) {

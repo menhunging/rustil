@@ -77,7 +77,7 @@
   }
 
   .grettings-btn {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
     padding: 15px 0 20px;
   }
@@ -89,6 +89,15 @@
 
   .color-block__right {
     width: 40%;
+    height: 540px;
+  }
+
+  .colors-slider {
+    margin-top: 20px;
+  }
+
+  .colors-block {
+    padding: 30px 50px 30px;
   }
 
   .color-block__list {
@@ -305,5 +314,21 @@
 
   .not-page__inner {
     padding: 60px;
+    min-height: 640px;
+  }
+
+  .grettings-btn__text::before {
+    right: -30px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .popup {
+    padding: 17px 25px 20px;
+  }
+
+  .popup-succes {
+    min-height: 390px;
   }
 }

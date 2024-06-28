@@ -1359,6 +1359,7 @@ h3,
 .color-block__left {
   width: 50%;
   max-width: 675px;
+  color: #221d1d;
 }
 .color-block__left span {
   display: block;
@@ -1740,6 +1741,8 @@ h3,
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 3;
 }
 .faq-item + .faq-item {
   margin-top: 26px;
@@ -2784,7 +2787,7 @@ marquee span {
     margin-top: 70px;
   }
   .grettings-btn {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
     padding: 15px 0 20px;
   }
@@ -2794,6 +2797,13 @@ marquee span {
   }
   .color-block__right {
     width: 40%;
+    height: 540px;
+  }
+  .colors-slider {
+    margin-top: 20px;
+  }
+  .colors-block {
+    padding: 30px 50px 30px;
   }
   .color-block__list {
     padding: 50px;
@@ -2963,6 +2973,19 @@ marquee span {
   }
   .not-page__inner {
     padding: 60px;
+    min-height: 640px;
+  }
+  .grettings-btn__text::before {
+    right: -30px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .popup {
+    padding: 17px 25px 20px;
+  }
+  .popup-succes {
+    min-height: 390px;
   }
 }
 @media (max-width: 1199px) {
@@ -3086,6 +3109,7 @@ marquee span {
   }
   .color-block__right {
     width: 40%;
+    height: 100%;
   }
   .color-block__list {
     padding: 50px;
