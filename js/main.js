@@ -273,6 +273,36 @@ $(document).ready(function () {
       }
     });
   }
+
+  if ($(".menu").length > 0) {
+    $(".menu a").click(function (event) {
+      if ($(this).attr("href").includes("#")) {
+        handleClick(event, $(this));
+      }
+    });
+  }
+
+  if ($(".footer-menu").length > 0) {
+    $(".footer-menu a").click(function (event) {
+      if ($(this).attr("href").includes("#")) {
+        handleClick(event, $(this));
+      }
+    });
+  }
 });
 
-$(window).on("resize", function () {});
+// $(window).on("resize", function () {});
+
+function handleClick(event, self) {
+  event.preventDefault();
+
+  let href = self.attr("href");
+  let offset_top = $(href).offset().top;
+
+  $("html, body").stop().animate(
+    {
+      scrollTop: offset_top,
+    },
+    300
+  );
+}

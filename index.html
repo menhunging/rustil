@@ -61,16 +61,16 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#">О продукте</a></li>
-                    <li><a href="#">Цвета</a></li>
-                    <li><a href="#">Цена</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Вопросы</a></li>
-                    <li><a href="#">Документация</a></li>
-                    <li><a href="#">Калькулятор</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#about">О продукте</a></li>
+                    <li><a href="#colors">Цвета</a></li>
+                    <li><a href="#price">Цена</a></li>
+                    <li><a href="#delivery">Доставка</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                    <li><a href="#docs">Документация</a></li>
+                    <li><a href="#price">Калькулятор</a></li>
+                    <li><a href="#partners">Партнёры</a></li>
+                    <li><a href="#info">О компании</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
 
                 <div class="header-mobile">
@@ -80,11 +80,9 @@
 
                     <div class="header__info">
                         <a href="tel:+74951206502" class="header__phone">+7 (495) 120-65-02</a>
-                        <a href="#" class="header__call">( заказать звонок )</a>
+                        <a href="#" class="header__call" data-modal="modal-call">( заказать звонок )</a>
                     </div>
                 </div>
-
-
             </nav>
         </header>
         <main class="main">
@@ -265,7 +263,7 @@
                             предложение</span></a>
                 </div>
             </section>
-            <section class="about-section">
+            <section class="about-section" id="about">
                 <div class="about-slider swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -379,7 +377,7 @@
                     </button>
                 </div>
             </section>
-            <section class="colors-section">
+            <section class="colors-section" id="colors">
                 <div class="colors-section__inner">
                     <div class="colors-block">
                         <div class="color-block__left">
@@ -505,7 +503,7 @@
                     </div>
                 </div>
             </section>
-            <section class="form-section calc-section">
+            <section class="form-section calc-section" id="price">
                 <div class="form-section__inner">
                     <div class="form-section__left">
                         <h2 class="form-section__caption">
@@ -536,7 +534,7 @@
                     </div>
                 </div>
             </section>
-            <section class="faq-section">
+            <section class="faq-section" id="faq">
                 <div class="faq-block">
                     <h2 class="caption">самые частые вопросы и ответы на них</h2>
                     <div class="faq-list">
@@ -582,9 +580,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="grettings-btn"><span class="grettings-btn__text">хочу задать вопрос</span></a>
+                <a href="#" class="grettings-btn" data-modal="modal-quest"><span class="grettings-btn__text">хочу задать
+                        вопрос</span></a>
             </section>
-            <section class="partners-section">
+            <section class="partners-section" id="partners">
                 <div class="section-title">
                     <h3 class="caption">компании, которые нам</h3>
                     <h3 class="caption text">доверяют!</h3>
@@ -663,7 +662,7 @@
                 <span>наши партнёры</span>
                 <span>наши партнёры</span>
             </marquee>
-            <section class="documents-section">
+            <section class="documents-section" id="docs">
                 <div class="documents-section__inner">
                     <h2 class="caption">документация</h2>
 
@@ -739,7 +738,7 @@
                     </div>
                 </div>
             </section>
-            <section class="info-section">
+            <section class="info-section" id="info">
                 <div class="section-title">
                     <h3 class="caption">немного информации
                         о нашей компании</h3>
@@ -892,7 +891,7 @@
                     своего выбора
                 </div>
             </section>
-            <section class="delivery-section">
+            <section class="delivery-section" id="delivery">
                 <div class="delivery-section__head">
                     <h2 class="caption">доставим ваш заказ
                         по всей России</h2>
@@ -951,7 +950,7 @@
                     </div>
                 </div>
             </section>
-            <form class="form-section commercial-offer">
+            <form class="form-section commercial-offer" id="offer">
                 <div class="form-section__inner">
                     <div class="form-section__left">
                         <h2 class="form-section__caption">
@@ -985,7 +984,7 @@
                 <button class="grettings-btn"><span class="grettings-btn__text">получить коммерческое
                         предложение</span></button>
             </form>
-            <section class="contacts-section">
+            <section class="contacts-section" id="contacts">
                 <div class="contacts-section__left">
                     <h2 class="caption">контакты</h2>
                     <div class="contacts__text">
@@ -1036,20 +1035,20 @@
 
                 <div class="footer-menu">
                     <ul>
-                        <li><a href="#">О продукте</a></li>
-                        <li><a href="#">Вопросы</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Цвета</a></li>
-                        <li><a href="#">Документация</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Цена</a></li>
-                        <li><a href="#">Калькулятор</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#about">О продукте</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                        <li><a href="#info">О компании</a></li>
+                        <li><a href="#colors">Цвета</a></li>
+                        <li><a href="#docs">Документация</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#price">Цена</a></li>
+                        <li><a href="#price">Калькулятор</a></li>
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#partners">Партнёры</a></li>
                     </ul>
                 </div>
 
-                <a href="#" class="link-call">заявка на звонок</a>
+                <a href="#" class="link-call" data-modal="modal-call">заявка на звонок</a>
 
                 <div class="footer-bottom">
                     <div class="copyRight">&copy; <span class="thisYear"></span> Рустил</div>
@@ -1217,8 +1216,8 @@
                         </div>
 
                         <div class="check-block">
-                            <input type="checkbox" id="personalpopup">
-                            <label for="personalpopup">даю согласие на обработку моих <a href="#">персональных
+                            <input type="checkbox" id="quest">
+                            <label for="quest">даю согласие на обработку моих <a href="#">персональных
                                     данных</a></label>
                         </div>
 

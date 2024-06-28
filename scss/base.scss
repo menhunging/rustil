@@ -602,3 +602,9 @@ picture {
   background-color: red;
   width: 7px;
 }
+
+.modal__overlay {
+  background: transparent;
+  background-color: rgba(29, 30, 34, 0.47);
+  opacity: 1;
+}
